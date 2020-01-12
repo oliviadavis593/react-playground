@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
 import Tabs from './Tabs'
-import renderer from 'react-test-renderer'
 
 describe('Tabs Component', () => {
+
+    const tabsProp = [/* ... */];
+
     it('renders without errors', () => {
         const div = document.createElement('div');
         ReactDOM.render(<Tabs />, div);
